@@ -68,9 +68,6 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 
 becomes:
 
-//graph
-//table
-
 [source,cypher]
 
 ----
@@ -104,10 +101,12 @@ CREATE (URL15 {href:'www.ott.nih.gov/sites/default/files/documents/pdfs/cda.pdf'
 
 CREATE (URL3)-[:HOSTS]->(URL15)
 
-
-RETURN URL15.href
+RETURN *
+//RETURN URL15.href
 
 ----
+
+
 
 
 
