@@ -68,11 +68,8 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 
 becomes:
 
-//graph
-//table
-
+//setup
 [source,cypher]
-
 ----
 CREATE (P1 {KV:'Name.First=James<br>Name.Last=Hazard'})
  CREATE (DM1 {name:'ABA_MSPA'})-[r:URL]->(URL1 {href:'abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636', format:'OrderForm'})
@@ -104,10 +101,21 @@ CREATE (URL15 {href:'www.ott.nih.gov/sites/default/files/documents/pdfs/cda.pdf'
 
 CREATE (URL3)-[:HOSTS]->(URL15)
 
-
-RETURN URL15.href
-
+RETURN *
+//RETURN URL15.href
 ----
+// graph
+
+
+=== Return all URLs with format ".pdf"
+
+[source,cypher]
+----
+MATCH (url {format: ".pdf"})
+RETURN url.format AS format, url.href AS href
+----
+//table
+
 
 
 
