@@ -68,8 +68,7 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 
 becomes:
 
-//graph
-//table
+//setup
 [source,cypher]
 ----
 CREATE (P1 {KV:'Name.First=James<br>Name.Last=Hazard'})
@@ -105,8 +104,17 @@ CREATE (URL3)-[:HOSTS]->(URL15)
 RETURN *
 //RETURN URL15.href
 ----
+// graph
 
 
+=== Return all URLs wihh format ".pdf"
+
+[source,cypher]
+----
+MATCH (url {format: ".pdf"})
+RETURN url.format AS format, url.href AS href
+----
+//table
 
 
 
