@@ -107,7 +107,7 @@ RETURN *
 // graph
 
 
-=== Return all URLs wihh format ".pdf"
+=== Return all URLs with format ".pdf"
 
 [source,cypher]
 ----
