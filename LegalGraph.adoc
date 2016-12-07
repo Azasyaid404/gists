@@ -68,7 +68,8 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 
 becomes:
 
-
+//graph
+//table
 [source,cypher]
 ----
 CREATE (P1 {KV:'Name.First=James<br>Name.Last=Hazard'})
@@ -105,7 +106,7 @@ RETURN *
 //RETURN URL15.href
 ----
 
-//graph_result
+
 
 
 
