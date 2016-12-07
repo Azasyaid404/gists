@@ -68,8 +68,8 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 
 becomes:
 
-[source,cypher]
 
+[source,cypher]
 ----
 CREATE (P1 {KV:'Name.First=James<br>Name.Last=Hazard'})
  CREATE (DM1 {name:'ABA_MSPA'})-[r:URL]->(URL1 {href:'abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636', format:'OrderForm'})
@@ -103,7 +103,6 @@ CREATE (URL3)-[:HOSTS]->(URL15)
 
 RETURN *
 //RETURN URL15.href
-
 ----
 
 //graph_result
