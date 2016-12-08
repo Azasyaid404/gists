@@ -6,12 +6,6 @@
 
 = Model Agt Frame
 
-
-//graph
-//table
-
-
-
 Graphs can represent very complex relationships.  B is an employee of A.  C has borrowed from D.   D and A are corporate affiliates.
 
 Documents are graphs.  The best way to handle documents is as source code - lists of {kv}s that render into the full document.  See {Cmorg}.
