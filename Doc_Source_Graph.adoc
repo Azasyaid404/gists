@@ -23,7 +23,7 @@ Finally, an entire legal system could run as a distributed collection of linked 
 
 @hazardj has begun a core of such content in Mediawiki (e.g., beta.commonaccord.org/wiki/Agt_Frame).  There appears every reason for that to become a graph. 
 
-+//setup
+//setup
 [source,cypher]
 ----
 CREATE (P1 {KV:'Name.First=James<>Name.Last=Hazard<>twitter=Hazardj'})
@@ -54,8 +54,7 @@ WITH Span1
 MATCH (v)<-[k:LISTS]-()
 RETURN k.key as Key, v.span as Value
 ----
-
-+//graph
+//graph
 
 == This Approach (A1)
 
